@@ -1,0 +1,19 @@
+This submission folder has-
+->two .java files
+->a Makefile
+->folder containing test script files.
+
+Upon running make, three .class files are created-
+->Spile.class
+->TCPClient.class
+->TCPServer.class
+
+The server can be run using
+	java TCPServer --portno--
+
+The client can be run using
+	java TCPClient --hostname-- --portno--
+
+The Tests folder contains script-*.log and time-*.txt files which can be used to replay the terminal session used for testing.
+This can be done using 
+	scriptreplay --timing=time-*.txt script-*.log

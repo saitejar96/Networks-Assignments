@@ -1,0 +1,65 @@
+Frame 321: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface 0
+    Interface id: 0 (wlo1)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 25, 2017 01:36:54.332548873 IST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1485288414.332548873 seconds
+    [Time delta from previous captured frame: 0.231428892 seconds]
+    [Time delta from previous displayed frame: 0.231428892 seconds]
+    [Time since reference or first frame: -214.362357648 seconds]
+    Frame Number: 321
+    Frame Length: 98 bytes (784 bits)
+    Capture Length: 98 bytes (784 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:icmp:data]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp || icmpv6]
+Ethernet II, Src: Netgear_35:e5:06 (74:44:01:35:e5:06), Dst: HonHaiPr_60:53:78 (9c:ad:97:60:53:78)
+    Destination: HonHaiPr_60:53:78 (9c:ad:97:60:53:78)
+        Address: HonHaiPr_60:53:78 (9c:ad:97:60:53:78)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Netgear_35:e5:06 (74:44:01:35:e5:06)
+        Address: Netgear_35:e5:06 (74:44:01:35:e5:06)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 10.6.8.2, Dst: 192.168.235.245
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 84
+    Identification: 0xb6ef (46831)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 63
+    Protocol: ICMP (1)
+    Header checksum: 0x0614 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 10.6.8.2
+    Destination: 192.168.235.245
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0
+    Checksum: 0xdf6c [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 3994 (0x0f9a)
+    Identifier (LE): 39439 (0x9a0f)
+    Sequence number (BE): 143 (0x008f)
+    Sequence number (LE): 36608 (0x8f00)
+    [Request frame: 320]
+    [Response time: 231.429 ms]
+    Timestamp from icmp data: Jan 25, 2017 01:36:54.000000000 IST
+    [Timestamp from icmp data (relative): 0.332548873 seconds]
+    Data (48 bytes)
+        Data: ea8a010000000000101112131415161718191a1b1c1d1e1f...
+        [Length: 48]
+

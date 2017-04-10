@@ -1,0 +1,38 @@
+Frame 29: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface 0
+    Interface id: 0 (wlo1)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 25, 2017 01:35:37.904568390 IST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1485288337.904568390 seconds
+    [Time delta from previous captured frame: 0.002257997 seconds]
+    [Time delta from previous displayed frame: 0.002257997 seconds]
+    [Time since reference or first frame: 6.045896588 seconds]
+    Frame Number: 29
+    Frame Length: 42 bytes (336 bits)
+    Capture Length: 42 bytes (336 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:arp]
+    [Coloring Rule Name: ARP]
+    [Coloring Rule String: arp]
+Ethernet II, Src: Netgear_35:e5:06 (74:44:01:35:e5:06), Dst: HonHaiPr_60:53:78 (9c:ad:97:60:53:78)
+    Destination: HonHaiPr_60:53:78 (9c:ad:97:60:53:78)
+        Address: HonHaiPr_60:53:78 (9c:ad:97:60:53:78)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Netgear_35:e5:06 (74:44:01:35:e5:06)
+        Address: Netgear_35:e5:06 (74:44:01:35:e5:06)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (2)
+    Sender MAC address: Netgear_35:e5:06 (74:44:01:35:e5:06)
+    Sender IP address: 192.168.235.1
+    Target MAC address: HonHaiPr_60:53:78 (9c:ad:97:60:53:78)
+    Target IP address: 192.168.235.245
+

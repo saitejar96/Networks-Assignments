@@ -1,0 +1,31 @@
+9  ifconfig
+  350  sudo ifconfig enp9s0 192.168.123.1 netmask 255.255.255.0
+  351  ifconfig
+  352  sudo ifconfig enp9s0 192.168.123.79 netmask 255.255.255.0
+  353  ifconfig
+  354  ping 192.168.123.70
+  355  echo 1 > /proc/sys/net/ipv4/ip_forward
+  356  sudo echo 1 > /proc/sys/net/ipv4/ip_forward
+  357  sudo vim /proc/sys/net/ipv4/ip_forward
+  358  visudo vim /proc/sys/net/ipv4/ip_forward
+  359  visudo /proc/sys/net/ipv4/ip_forward
+  360  sudo vim /proc/sys/net/ipv4/ip_forward
+  361  su
+  362  sudo su
+  363  sudo vim /proc/sys/net/ipv4/ip_forward
+  364  echo 1 | sudo dd of=/proc/sys/net/ipv4/ip_forward
+  365  cat /proc/sys/net/ipv4/ip_forward
+  366  /sbin/iptables -t nat -A POSTROUTING -o enp9s0 -j MASQUERADE
+  367  sudo /sbin/iptables -t nat -A POSTROUTING -o enp9s0 -j MASQUERADE
+  368  /sbin/iptables -A FORWARD -i enp9s0 -o wlp8s0 -m state
+  369  sudo /sbin/iptables -A FORWARD -i enp9s0 -o wlp8s0 -m state
+  370  sudo /sbin/iptables -A FORWARD -i enp9s0 -o wlp8s0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+  371  sudo /sbin/iptables -A FORWARD -i wlp8s0 -o enp9s0 -j ACCEPT
+  372  sudo vim  /etc/sysctl.conf 
+  373  ping google.com
+  374  ping www.google.com
+  375  sudo vim  /etc/sysctl.conf 
+  376  sudo /sbin/iptables -t nat -A POSTROUTING -o wlp8s0 -j MASQUERADE
+  377  sudo /sbin/iptables -A FORWARD -i wlp8s0 -o enp9s0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+  378  sudo /sbin/iptables -A FORWARD -i enp9s0 -o wlp8s0 -j ACCEPT
+  379  ls

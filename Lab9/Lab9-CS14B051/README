@@ -1,0 +1,22 @@
+This submission folder has-
+->one .java file
+->a Makefile
+->a README file
+->a BASH script file
+->a python script file
+->a technical report
+->a test script file
+->32 graphs
+->32 csv data files
+
+Upon running make, one .class files are created-
+->CongestionControl.class
+
+The Tests folder contains script.log file which can be used to read the terminal session used for testing.
+
+The CongestionControl.class is run using java CongestionControl and the following arguments
+i,m,n,f,p,t,o
+
+Upon running the script.sh BASH script file, it generates 32 output csv files
+
+Upon running the plot.py script file, it generates 32 png graph files

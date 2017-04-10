@@ -1,0 +1,79 @@
+Script started on Sunday 12 February 2017 11:43:18 PM IST
+]0;saitejar96@saitejar96-HP-Pavilion-15-Notebook-PC: ~/Desktop/Networks/Lab4/LAB4[01;32msaitejar96@saitejar96-HP-Pavilion-15-Notebook-PC[00m:[01;34m~/Desktop/Networks/Lab4/LAB4[00m$ java TCPClient localhost 4985
+Main-Prompt>ListUse   users
+No Users Yet!
+Main-Prompt>Adduser sai
+Userid successfully created
+Main-Prompt>Adduser mohith
+Userid successfully created
+Main-Prompt>Listusers
+sai,mohith
+Main-Prompt>Setuser      User mohith
+User exists , has 0 mails and current user changed to mohith
+Sub-Prompt-mohith>Read
+No more mail
+Sub-Prompt-mohith>Send sai
+SEND mohith
+mohith> Type Subject: hello
+mohith> Type Content: i am sai teja
+i would like to be your friend
+###
+Sent
+Sub-Prompt-mohith>Done
+DONEU
+Main-Prompt>SetUser sai
+User exists , has 1 mails and current user changed to sai
+Sub-Prompt-sai>Read
+READM
+From: mohith
+To: sai
+Date: Sun Feb 12 23:44:21 IST 2017
+Subject: hello
+Contents :
+i am sai teja
+i would like to be your friend
+###
+
+Sub-Prompt-sai>SetUser sai
+User exists , has 1 mails and current user changed to sai
+Sub-Prompt-sai>Delete
+Deleted mail
+Sub-Prompt-sai>SetUser sai
+User exists , has 0 mails and current user changed to sai
+Sub-Prompt-sai>Send mohith
+SEND sai
+sai> Type Subject: hello
+sai> Type Content: i would love to be your friend
+###
+Sent
+Sub-Prompt-sai>Set User       User mohith
+User exists , has 1 mails and current user changed to mohith
+Sub-Prompt-mohith>Done
+DONEU
+Main-Prompt>Read
+ERROR
+Main-Prompt>Delete
+ERROR
+Main-Prompt>Listusers
+sai,mohith
+Main-Prompt>SetUser mohith
+User exists , has 1 mails and current user changed to mohith
+Sub-Prompt-mohith>Read
+READM
+From: sai
+To: mohith
+Date: Sun Feb 12 23:45:34 IST 2017
+Subject: hello
+Contents :
+i would love to be your friend
+###
+
+Sub-Prompt-mohith>Done
+DONEU
+Main-Prompt>Quit
+QUIT
+Connection closed
+]0;saitejar96@saitejar96-HP-Pavilion-15-Notebook-PC: ~/Desktop/Networks/Lab4/LAB4[01;32msaitejar96@saitejar96-HP-Pavilion-15-Notebook-PC[00m:[01;34m~/Desktop/Networks/Lab4/LAB4[00m$ exit
+exit
+
+Script done on Sunday 12 February 2017 11:46:47 PM IST

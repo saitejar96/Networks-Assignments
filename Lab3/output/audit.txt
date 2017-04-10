@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Wed Jan 25 10:37:42 2017
+Invocation: foremost -v -i final.raw 
+Output directory: /home/saitejar96/Desktop/Networks/Lab3/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: final.raw
+Start: Wed Jan 25 10:37:42 2017
+Length: 9 KB (9791 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	       9 KB 	         20 	 
+Finish: Wed Jan 25 10:37:42 2017
+
+1 FILES EXTRACTED
+	
+jpg:= 1
+------------------------------------------------------------------
+
+Foremost finished at Wed Jan 25 10:37:42 2017

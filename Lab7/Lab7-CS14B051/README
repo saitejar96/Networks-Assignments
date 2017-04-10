@@ -1,0 +1,27 @@
+This submission folder has-
+->one .java files
+->a Makefile
+->a README file
+->a COMMENTS file
+->a BASH script file
+->a technical report
+->folder containing test script files.
+
+Upon running make, three .class files are created-
+->Slot.class
+->Packet.class
+->Node.class
+->SlottedAloha2.class
+
+The Tests folder contains script.log file which can be used to read the terminal session used for testing.
+
+The SlottedAloha2.class is run using java SlottedAloha2 and the following arguments
+1. “-N integer”: number of users sharing the channel
+2. “-W integer”: specifies initial value of Collision Window size for all nodes (W (i); default: 2).
+3. “-p double”: specifies PACKET GEN RATE (p): probability of packet generation per unit
+time per node
+4. “-M integer”: MAX PACKETS
+
+Upon running the hello.sh BASH script file, it generates outputs using N=50,W in {2,4} and p in {0.01,0.02,0.03,0.05,0.10}
+
+The plot was generated using plotly.com  

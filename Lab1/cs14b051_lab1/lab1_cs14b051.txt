@@ -1,0 +1,28 @@
+The parent folder contains four files- 
+udpclient.c
+udpserver.c
+tcpclient.c
+tcpserver.c
+
+All files can be compiled using [gcc -o --executable-name-- --C-filename--]
+**Ignore warnings
+
+Upon running make four executables are created-
+UDPclient
+UDPserver
+TCPclient
+TCPserver
+
+The server files can be run using [./**Pserver --port no.--]
+The client files can be run using [./**Pclient --host address-- --port no.--]
+
+Upon running the client files, the client program establishes a connection and sends a message "saiteja" to the server 1000 times and finally prints out the average of time taken to receive the echo from the server. 
+Timing is taken care of inside the program using clock() function from time.h
+
+Also server and client info are shown in the terminals appropriately.
+
+Observations-
+Avg time for tcp server client = 0.000018 s
+Avg time for udp server client = 0.000013 s 
+
+UDP is faster than TCP due to lack of the three way handshake.

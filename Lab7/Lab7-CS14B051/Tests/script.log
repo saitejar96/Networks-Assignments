@@ -1,0 +1,97 @@
+Script started on Sunday 19 March 2017 03:17:04 PM IST
+]0;saitejar96@saitejar96-HP-Pavilion-15-Notebook-PC: ~/Desktop/Networks/Lab7[01;32msaitejar96@saitejar96-HP-Pavilion-15-Notebook-PC[00m:[01;34m~/Desktop/Networks/Lab7[00m$ makepython manage.py runserver 0:8000[7P./manage.py makemigrations[7Pigrate[12Pmigrate./manage.py makemigrationsmigrate[K./manage.py migrateakemigrationspython manage.py runserver 0:8000make[K[Kj[Kmake
+javac -g SlottedAloha2.java
+]0;saitejar96@saitejar96-HP-Pavilion-15-Notebook-PC: ~/Desktop/Networks/Lab7[01;32msaitejar96@saitejar96-HP-Pavilion-15-Notebook-PC[00m:[01;34m~/Desktop/Networks/Lab7[00m$ jav [Ka SlottedAloha2 -n[KN 50 [K[K[K10 -W 2 -p 0.01 -M 300
+No. of nodes: 10
+W: 2
+Probability of Generating: 0.01
+Utilization: 0.09797518
+Average Packet Delay: 0
+]0;saitejar96@saitejar96-HP-Pavilion-15-Notebook-PC: ~/Desktop/Networks/Lab7[01;32msaitejar96@saitejar96-HP-Pavilion-15-Notebook-PC[00m:[01;34m~/Desktop/Networks/Lab7[00m$ java SlottedAloha2 -N 10 -W 2 -p 0.01 -M 300[1P[1@5
+No. of nodes: 50
+W: 2
+Probability of Generating: 0.01
+Utilization: 0.28519857
+Average Packet Delay: 21
+]0;saitejar96@saitejar96-HP-Pavilion-15-Notebook-PC: ~/Desktop/Networks/Lab7[01;32msaitejar96@saitejar96-HP-Pavilion-15-Notebook-PC[00m:[01;34m~/Desktop/Networks/Lab7[00m$ java SlottedAloha2 -N 50 -W 2 -p 0.01 -M 300[C[1P[1@4
+No. of nodes: 50
+W: 4
+Probability of Generating: 0.01
+Utilization: 0.3287037
+Average Packet Delay: 24
+]0;saitejar96@saitejar96-HP-Pavilion-15-Notebook-PC: ~/Desktop/Networks/Lab7[01;32msaitejar96@saitejar96-HP-Pavilion-15-Notebook-PC[00m:[01;34m~/Desktop/Networks/Lab7[00m$ java SlottedAloha2 -N 50 -W 4 -p 0.01 -M 300[1P[1P[1@5
+No. of nodes: 50
+W: 4
+Probability of Generating: 0.5
+Utilization: 0.27203065
+Average Packet Delay: 52
+]0;saitejar96@saitejar96-HP-Pavilion-15-Notebook-PC: ~/Desktop/Networks/Lab7[01;32msaitejar96@saitejar96-HP-Pavilion-15-Notebook-PC[00m:[01;34m~/Desktop/Networks/Lab7[00m$ java SlottedAloha2 -N 50 -W 4 -p 0.5 -M 300[K[K
+No. of nodes: 50
+W: 4
+Probability of Generating: 0.5
+Utilization: 0.09090909
+Average Packet Delay: 28
+]0;saitejar96@saitejar96-HP-Pavilion-15-Notebook-PC: ~/Desktop/Networks/Lab7[01;32msaitejar96@saitejar96-HP-Pavilion-15-Notebook-PC[00m:[01;34m~/Desktop/Networks/Lab7[00m$ sudo ./hello.sh 
+[sudo] password for saitejar96: 
+No. of nodes: 50
+W: 2
+Probability of Generating: 0.01
+Utilization: 0.3343949
+Average Packet Delay: 23
+No. of nodes: 50
+W: 2
+Probability of Generating: 0.02
+Utilization: 0.23770492
+Average Packet Delay: 44
+No. of nodes: 50
+W: 2
+Probability of Generating: 0.03
+Utilization: 0.22362868
+Average Packet Delay: 54
+No. of nodes: 50
+W: 2
+Probability of Generating: 0.05
+Utilization: 0.25
+Average Packet Delay: 62
+No. of nodes: 50
+W: 2
+Probability of Generating: 0.1
+Utilization: 0.28173375
+Average Packet Delay: 67
+No. of nodes: 50
+W: 4
+Probability of Generating: 0.01
+Utilization: 0.31791908
+Average Packet Delay: 48
+No. of nodes: 50
+W: 4
+Probability of Generating: 0.02
+Utilization: 0.29894736
+Average Packet Delay: 58
+No. of nodes: 50
+W: 4
+Probability of Generating: 0.03
+Utilization: 0.28402367
+Average Packet Delay: 63
+No. of nodes: 50
+W: 4
+Probability of Generating: 0.05
+Utilization: 0.25696594
+Average Packet Delay: 73
+No. of nodes: 50
+W: 4
+Probability of Generating: 0.1
+Utilization: 0.29464287
+Average Packet Delay: 80
+]0;saitejar96@saitejar96-HP-Pavilion-15-Notebook-PC: ~/Desktop/Networks/Lab7[01;32msaitejar96@saitejar96-HP-Pavilion-15-Notebook-PC[00m:[01;34m~/Desktop/Networks/Lab7[00m$ quit
+No command 'quit' found, did you mean:
+ Command 'luit' from package 'x11-utils' (main)
+ Command 'qgit' from package 'qgit' (universe)
+ Command 'quiz' from package 'bsdgames' (universe)
+ Command 'quot' from package 'quota' (main)
+ Command 'quilt' from package 'quilt' (universe)
+quit: command not found
+]0;saitejar96@saitejar96-HP-Pavilion-15-Notebook-PC: ~/Desktop/Networks/Lab7[01;32msaitejar96@saitejar96-HP-Pavilion-15-Notebook-PC[00m:[01;34m~/Desktop/Networks/Lab7[00m$ exit
+exit
+
+Script done on Sunday 19 March 2017 03:18:32 PM IST

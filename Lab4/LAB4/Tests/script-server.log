@@ -1,0 +1,79 @@
+Script started on Sunday 12 February 2017 11:42:43 PM IST
+]0;saitejar96@saitejar96-HP-Pavilion-15-Notebook-PC: ~/Desktop/Networks/Lab4/LAB4[01;32msaitejar96@saitejar96-HP-Pavilion-15-Notebook-PC[00m:[01;34m~/Desktop/Networks/Lab4/LAB4[00m$ java TCPServer 4985
+Received: LSTU
+Processed to: No Users Yet!
+Received: ADDU sai
+Processed to: Userid successfully created
+Received: ADDU mohith
+Processed to: Userid successfully created
+Received: LSTU
+Processed to: sai,mohith
+Received: USER mohith
+Processed to: User exists , has 0 mails and current user changed to mohith
+Received: READM
+Processed to: No more mail
+Received: SEND sai
+came
+came
+came
+came
+came
+Processed to: Sent
+Received: DONEU
+Processed to: DONEU
+Received: USER sai
+Processed to: User exists , has 1 mails and current user changed to sai
+Received: READM
+Processed to: From: mohith
+To: sai
+Date: Sun Feb 12 23:44:21 IST 2017
+Subject: hello
+Contents :
+i am sai teja
+i would like to be your friend
+###
+
+
+Received: USER sai
+Processed to: User exists , has 1 mails and current user changed to sai
+Received: DELM
+Processed to: Deleted mail
+Received: USER sai
+Processed to: User exists , has 0 mails and current user changed to sai
+Received: SEND mohith
+came
+came
+came
+came
+came
+Processed to: Sent
+Received: USER mohith
+Processed to: User exists , has 1 mails and current user changed to mohith
+Received: DONEU
+Processed to: DONEU
+Received: ERROR
+Processed to: ERROR
+Received: ERROR
+Processed to: ERROR
+Received: LSTU
+Processed to: sai,mohith
+Received: USER mohith
+Processed to: User exists , has 1 mails and current user changed to mohith
+Received: READM
+Processed to: From: sai
+To: mohith
+Date: Sun Feb 12 23:45:34 IST 2017
+Subject: hello
+Contents :
+i would love to be your friend
+###
+
+
+Received: DONEU
+Processed to: DONEU
+Received: QUIT
+Processed to: QUIT
+^C]0;saitejar96@saitejar96-HP-Pavilion-15-Notebook-PC: ~/Desktop/Networks/Lab4/LAB4[01;32msaitejar96@saitejar96-HP-Pavilion-15-Notebook-PC[00m:[01;34m~/Desktop/Networks/Lab4/LAB4[00m$ exit
+exit
+
+Script done on Sunday 12 February 2017 11:46:54 PM IST

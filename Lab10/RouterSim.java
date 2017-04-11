@@ -90,6 +90,7 @@ class NodeInfo
 	public int j;
 	public int minC;
 	public int maxC;
+	public int cost;
 
 	public NodeInfo(int i1,int i2,int i3,int i4)
 	{
@@ -97,11 +98,12 @@ class NodeInfo
 		this.j = i2;
 		this.minC = i3;
 		this.maxC = i4;
+		this.cost = 0;
 	}
 
 	public String toString()
 	{
-		return this.i+" "+this.j+" "+this.minC+" "+this.maxC;
+		return this.i+" "+this.j+" "+this.minC+" "+this.maxC+" "+this.cost;
 	}
 
 }
@@ -127,10 +129,7 @@ class HelloSend extends Thread
 			{	
 				Socket = new DatagramSocket();
 				InetAddress IPAddress = InetAddress.getByName("localhost");
-				HelloMssg hm = new HelloMssg(nodeInfos.get(i).j);
-				ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-				ObjectOutputStream os = new ObjectOutputStream(outputStream);
-				os.writeObject(hm);
+				
 				byte[] data = outputStream.toByteArray();
 				DatagramPacket sendPacket = new DatagramPacket(data, data.length, IPAddress,10000+nodeInfos.get(i).j);
 				Socket.send(sendPacket);
@@ -155,15 +154,3 @@ class DetermineTopo extends Thread
 
 }
 
-class HelloMssg
-{
-	public String mssg;
-	public int srcid;
-
-	public HelloMssg(int srcid)
-	{
-		this.mssg = "HELLO";
-		this.srcid = srcid;
-	}
-
-} 

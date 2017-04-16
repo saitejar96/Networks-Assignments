@@ -372,10 +372,14 @@ class DetermineTopo extends Thread
 
 				int dist[] = new int[NO_OF_NODES];
 				boolean prev[] = new boolean[NO_OF_NODES];
+				int prex[] = new int[NO_OF_NODES];
+				int[] parent = new int[NO_OF_NODES];
 				for (int k = 0; k < NO_OF_NODES; k++)
 		        {
 		            dist[k] = 10000;
 		            prev[k] = false;
+		            prex[k] = -1;
+		            parent[k]=-1;
 		        }
 		        dist[NODE_IDENTIFIER] = 0;
 		        for (int k= 0; k < NO_OF_NODES-1; k++)
@@ -385,9 +389,14 @@ class DetermineTopo extends Thread
 		        	for (int v = 0; v < NO_OF_NODES; v++)
 		        	{
 		        		if (!prev[v] && AdjMat.get(u).get(v)!=-1 && dist[u] != 10000 && dist[u]+AdjMat.get(u).get(v)<dist[v])
+		        		{
+		        			parent[v]=u;
                     		dist[v]=dist[u]+AdjMat.get(u).get(v);
+                    		prex[v]=u;
+                    	}
 		        	}
 		        }
+
 
 		        BufferedWriter bw = null;
 				FileWriter fw = null;
@@ -397,12 +406,33 @@ class DetermineTopo extends Thread
 
 				bw.write(" Routing Table for Node No. "+NODE_IDENTIFIER+" at "+new Date()+"\n");
 				for (int i = 0; i < NO_OF_NODES; i++)
-					bw.write(i+" \t "+dist[i]+"\n");
+				{
+					ArrayList<Integer> xall = new ArrayList<Integer>();
+			    	int a = i;
+			    	xall.add(a);
+			    	while(parent[a]!=-1)
+			    	{
+			    		xall.add(parent[a]);
+			    		a = parent[a];
+			    	}
+
+			    	String sp = ""+NODE_IDENTIFIER;
+			    	for(int jc=xall.size()-2;jc>=0;jc--)
+			    		sp=sp+"->"+xall.get(jc);
+			    	for(int jc=0;jc<100-sp.length();jc++)
+			    		sp=sp+" ";
+			        bw.write(i+"      "+sp+dist[i]+"\n");
+				}
 				bw.write("-----------------------------------------------------------\n");
+				
+				// for(int i=0;i<NO_OF_NODES;i++)
+				// 	bw.write(parent[i]+" ");
+				// bw.write("\n");	
 
 		        System.out.println("Routing Table at "+new Date());
-			    for (int i = 0; i < NO_OF_NODES; i++)
+			    for (int i = 0; i < NO_OF_NODES; i++){
 			        System.out.println(i+" \t "+dist[i]);
+			    }
 
 			    bw.close();
 			    fw.close();
